@@ -19,7 +19,7 @@ $ milligram --help
   Examples:
 
     $ milligram init new_app
-`
+`;
 
 function init () {
 	console.log(help);
