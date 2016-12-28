@@ -2,6 +2,7 @@
 
 > A cli tool for getting started with Milligram.
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f51b4df1692c43a6899a18dcd864c9c4)](https://www.codacy.com/app/milligram/milligram-cli?utm_source=github.com&utm_medium=referral&utm_content=milligram/milligram-cli&utm_campaign=badger)
 [![Travis Status](https://travis-ci.org/milligram/milligram-cli.svg?branch=master)](https://travis-ci.org/milligram/milligram-cli?branch=master)
 [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/22xssg0d4bl2kqp9?svg=true)](https://ci.appveyor.com/project/cjpatoilo/milligram-cli)
 [![Codacy Status](https://img.shields.io/codacy/grade/f51b4df1692c43a6899a18dcd864c9c4/master.svg)](https://www.codacy.com/app/milligram/milligram-cli/dashboard)
