@@ -1,0 +1,55 @@
+{
+	"name": "milligram-cli",
+	"version": "0.0.0",
+	"description": "A cli tool for getting started with Milligram.",
+	"homepage": "http://milligram.github.io",
+	"repository": "milligram/milligram-cli",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
+	"bin": {
+		"milligram": "bin/cli.js"
+	},
+	"files": [
+		"bin/cli.js",
+		"src/help.js",
+		"src/index.js",
+		"src/version.js"
+	],
+	"keywords": [
+		"automation",
+		"boilerplate",
+		"cli",
+		"css",
+		"framework",
+		"milligram",
+		"npm",
+		"package",
+		"starter"
+	],
+	"ignore": [
+		".appveyor.yml",
+		".editorconfig",
+		".github",
+		".gitignore",
+		".travis.yml"
+	],
+	"dependencies": {
+		"shelljs": "^0.7.5"
+	},
+	"devDependencies": {
+		"ava": "^0.17.0",
+		"eslint": "^3.12.1",
+		"eslint-config-standard": "^6.2.1",
+		"eslint-plugin-promise": "^2.0.1",
+		"eslint-plugin-standard": "^2.0.1",
+		"nyc": "^10.0.0"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"ava": "nyc ava",
+		"eslint": "eslint -c .eslintrc src",
+		"test": "eslint && ava"
+	}
+}
