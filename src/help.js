@@ -3,22 +3,22 @@
 const help = `
 $ milligram --help
 
-	Usage:
+  Usage:
 
-		$ milligram <command> <directory> [<options>]
+    $ milligram <command> <directory> [<options>]
 
-	Commands:
+  Commands:
 
-		i, init              Initialize a Milligram project
+    i, init                 Initialize a Milligram project
 
-	Options:
+  Options:
 
-		-h, --help              Display help information
-		-v, --version           Output version
+    -h, --help              Display help information
+    -v, --version           Output version
 
-	Examples:
+  Examples:
 
-		$ milligram init new_app
+    $ milligram init new_app
 `
 
 function init () {
