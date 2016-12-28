@@ -15,7 +15,7 @@ function init (argv) {
 	}
 	shelljs
 		.exec(`git clone ${url} ${directory}`)
-		.exec(`rm -rf ${directory}/.git`);
+		.exec(`rm -rf ${directory}/.*`);
 	process.exit(1);
 }
 
