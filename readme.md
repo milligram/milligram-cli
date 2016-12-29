@@ -13,7 +13,7 @@
 
 ## Why it's awesome?
 
-A CLI for getting started with Milligram. It offers a super simple boilerplate project to get started with Milligram.
+A CLI for getting started with Milligram.
 
 
 ## Install
