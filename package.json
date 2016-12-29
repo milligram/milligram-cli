@@ -1,6 +1,6 @@
 {
 	"name": "milligram-cli",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A cli tool for getting started with Milligram.",
 	"homepage": "http://milligram.github.io",
 	"repository": "milligram/milligram-cli",
