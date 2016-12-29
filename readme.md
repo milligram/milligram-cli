@@ -55,7 +55,7 @@ $ npm start
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/milligram-cli/blob/master/.github/contributing.md).
+Want to contribute? Follow these [recommendations](https://github.com/milligram/milligram-cli/blob/master/.github/contributing.md).
 
 
 ## License
