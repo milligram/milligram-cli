@@ -41,7 +41,8 @@
     "test": "nyc ava"
   },
   "engines": {
-    "node": ">=4"
+    "node": "^12.16.2",
+    "npm": "^6.14.4"
   },
   "prettier": {
     "jsxSingleQuote": false,
