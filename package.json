@@ -7,13 +7,10 @@
   "license": "MIT",
   "author": "CJ Patoilo <cjpatoilo@gmail.com>",
   "bin": {
-    "milligram": "cli.js"
+    "milligram": "index.js"
   },
   "files": [
-    "cli.js",
-    "help.js",
-    "index.js",
-    "version.js"
+    "index.js"
   ],
   "keywords": [
     "automation",
@@ -27,6 +24,7 @@
     "starter"
   ],
   "dependencies": {
+    "rasper": "^0.2.8",
     "shelljs": "^0.8.4"
   },
   "devDependencies": {
