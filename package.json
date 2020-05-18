@@ -7,13 +7,13 @@
   "license": "MIT",
   "author": "CJ Patoilo <cjpatoilo@gmail.com>",
   "bin": {
-    "milligram": "bin/cli.js"
+    "milligram": "cli.js"
   },
   "files": [
-    "bin/cli.js",
-    "src/help.js",
-    "src/index.js",
-    "src/version.js"
+    "cli.js",
+    "help.js",
+    "index.js",
+    "version.js"
   ],
   "keywords": [
     "automation",

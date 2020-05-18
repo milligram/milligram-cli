@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const help = `
 $ milligram --help
@@ -19,11 +19,11 @@ $ milligram --help
   Examples:
 
     $ milligram init new_app
-`;
+`
 
 function init () {
-	console.log(help);
-	process.exit(1);
-};
+  console.log(help)
+  process.exit(1)
+}
 
-exports.init = init;
+exports.init = init
