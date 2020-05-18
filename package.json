@@ -1,57 +1,60 @@
 {
-	"name": "milligram-cli",
-	"version": "0.0.3",
-	"description": "A cli tool for getting started with Milligram.",
-	"homepage": "http://milligram.github.io",
-	"repository": "milligram/milligram-cli",
-	"license": "MIT",
-	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"bin": {
-		"milligram": "bin/cli.js"
-	},
-	"files": [
-		"bin/cli.js",
-		"src/help.js",
-		"src/index.js",
-		"src/version.js"
-	],
-	"keywords": [
-		"automation",
-		"boilerplate",
-		"cli",
-		"css",
-		"framework",
-		"milligram",
-		"npm",
-		"package",
-		"starter"
-	],
-	"ignore": [
-		".appveyor.yml",
-		".editorconfig",
-		".github",
-		".gitignore",
-		".travis.yml"
-	],
-	"dependencies": {
-		"shelljs": "^0.7.5"
-	},
-	"devDependencies": {
-		"ava": "^0.17.0",
-		"eslint": "^3.12.1",
-		"eslint-config-standard": "^6.2.1",
-		"eslint-plugin-promise": "^2.0.1",
-		"eslint-plugin-standard": "^2.0.1",
-		"husky": "^0.12.0",
-		"nyc": "^10.0.0"
-	},
-	"engines": {
-		"node": ">=4"
-	},
-	"scripts": {
-		"precommit": "npm t",
-		"ava": "nyc ava",
-		"eslint": "eslint -c .eslintrc src",
-		"test": "eslint && ava"
-	}
+  "name": "milligram-cli",
+  "version": "0.1.0",
+  "description": "A cli tool for getting started with Milligram.",
+  "homepage": "http://milligram.github.io",
+  "repository": "milligram/milligram-cli",
+  "license": "MIT",
+  "author": "CJ Patoilo <cjpatoilo@gmail.com>",
+  "bin": {
+    "milligram": "index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "automation",
+    "boilerplate",
+    "cli",
+    "css",
+    "framework",
+    "milligram",
+    "npm",
+    "package",
+    "starter"
+  ],
+  "dependencies": {
+    "rasper": "^0.2.8",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "ava": "^3.8.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.4",
+    "nyc": "^15.0.1",
+    "prettier-standard": "^16.3.0"
+  },
+  "scripts": {
+    "lint": "prettier-standard --check",
+    "test": "nyc ava"
+  },
+  "engines": {
+    "node": "^12.16.2",
+    "npm": "^6.14.4"
+  },
+  "prettier": {
+    "jsxSingleQuote": false,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": [
+      "prettier-standard --format",
+      "git add"
+    ]
+  }
 }
