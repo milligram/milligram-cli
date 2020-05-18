@@ -2,7 +2,7 @@
   "name": "milligram-cli",
   "version": "0.1.0",
   "description": "A cli tool for getting started with Milligram.",
-  "homepage": "http://milligram.github.io",
+  "homepage": "https://milligram.io",
   "repository": "milligram/milligram-cli",
   "license": "MIT",
   "author": "CJ Patoilo <cjpatoilo@gmail.com>",
