@@ -13,46 +13,40 @@ if (argv.v || argv.version) {
 
 if (argv.h || argv.help) {
   console.log(`
-  $ milligram --help
+$ milligram --help
 
-    Usage:
+  Usage:
 
-      $ milligram <command> <directory> [<options>]
+    $ milligram [<directory>] [<options>]
 
-    Commands:
+  Options:
 
-      i, init                 Initialize a Milligram project
+    -h, --help              Display help information
+    -v, --version           Output version
 
-    Options:
+  Examples:
 
-      -h, --help              Display help information
-      -v, --version           Output version
-
-    Examples:
-
-      $ milligram init new_app
-  `)
+    $ milligram my_milligram_app # default: milligram_app
+`)
   process.exit(0)
 }
 
-if (argv._[0]) {
-  const directory = argv._[0] || 'milligram_app'
+const directory = argv._[0] || 'milligram_app'
 
-  if (fs.existsSync(directory)) {
-    console.warn('[warning] This directory already exists.')
-    process.exit(1)
-  }
-
-  if (!shelljs.which('git')) {
-    console.error('[error] Sorry, this script requires git')
-    process.exit(1)
-  }
-
-  shelljs
-    .exec(
-      `git clone https://github.com/milligram/milligram-starter.git ${directory}`,
-    )
-    .exec(`rm -rf ${directory}/.* 2> /dev/null`)
-
-  process.exit(0)
+if (fs.existsSync(directory)) {
+  console.warn('[warning] This directory already exists.')
+  process.exit(1)
 }
+
+if (!shelljs.which('git')) {
+  console.error('[error] Sorry, this script requires git')
+  process.exit(1)
+}
+
+shelljs
+  .exec(
+    `git clone https://github.com/milligram/milligram-starter.git ${directory}`,
+  )
+  .exec(`rm -rf ${directory}/.* 2> /dev/null`)
+
+process.exit(0)
