@@ -53,6 +53,15 @@ $ milligram --help
     $ milligram my_milligram_app # default: milligram_app
 ```
 
+Now, create a new Milligram app using the command `$ milligram`, then install dependencies and run with `npm run start`.
+
+## Available Commands
+
+- `npm run start` - starts the development server with hot reloading enabled
+- `npm run build` - generates the distribution files
+- `npm run lint` - check with code linter
+- `npm run test` - start the test runner
+
 ## Table of Contents
 
 - [Getting Started](https://milligram.io/#getting-started)
