@@ -14,22 +14,43 @@
 
 Milligram provides a minimal setup of styles for a fast and clean starting point. Just it! **Only 2kb gzipped!** It's not about a UI framework. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code. Hope you enjoy!
 
-## Install
+## Getting Started
+
+**Install with npm**
 
 ```sh
 $ npm install -g milligram-cli
 ```
 
-_NOTE: Install this npm package with `-g` or `--global` to global use._
+**Install with Yarn**
+
+```sh
+$ yarn global add milligram-cli
+```
+
+**Run with npx (without installing)**
+
+```sh
+$ npx milligram-cli [<command>] [<options>]
+```
 
 ## Usage
 
-Create a new app using the command `milligram init`, then install dependencies and run with `npm start`.
-
 ```sh
-$ milligram init new_app
-$ cd new_app
-$ npm start
+$ milligram --help
+
+  Usage:
+
+    $ milligram [<directory>] [<options>]
+
+  Options:
+
+    -h, --help              Display help information
+    -v, --version           Output version
+
+  Examples:
+
+    $ milligram my_milligram_app # default: milligram_app
 ```
 
 ## Table of Contents
